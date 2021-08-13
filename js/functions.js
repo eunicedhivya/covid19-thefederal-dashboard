@@ -77,7 +77,7 @@ function createDropDowns(selector, dropdowndata, valuelabel, contentlabel, type)
 }
 
 
-function animatedFormatData(inputdata,selector) {
+function animatedFormatData(inputdata, selector) {
     // var datapoint = parseInt(inputdata)
     // console.log(selector, typeof(datapoint));
     // console.log(selector, datapoint);

@@ -1,60 +1,76 @@
-function drawIndiaMap(selector){
+function drawIndiaMap(selector, type, dataformap){
     var width = 300, height = 332, scale = 580, center = [82.8, 23.4];
     var source = "js/maps/india_2019.json";
+    d3.select(selector).html(null);
     var svg = d3.select(selector)
     .append("svg")
     .attr("class", "india map")
     .attr("viewBox", "0 0 " + width + " " + height)
     .attr("preserveAspectRatio", "xMinYMin")
-    // var colorScale = {
-    //     "0": "#EEEEEE",
-    //     "10": "#FEE5D9",
-    //     "30": "#FEE5D9",
-    // }
-   
-    // var colorScale = d3.scaleThreshold()
-    // .domain([1, 180, 350, 530, 700, 890])
-    // .domain([0, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000])
-    // .range(["#fde8de", "#FDD5C3", "#FCA487", "#FA7254", "#E83A2E", "#BC171C"]);
-    var colorScale = d3.scaleThreshold()
+
+    var colorScaleCases = d3.scaleThreshold()
     .domain([0, 2000 ,10000 ,20000, 40000, 70000, 90000, 100000, 120000])
     .range(["#fff5f0"  ,"#fee0d2","#fcbba1" ,"#fc9272" ,"#fb6a4a" ,"#ef3b2c" ,"#cb181d" ,"#a50f15" ,"#67000d"]);
-    // .range(d3.schemeReds[6]);
+
+    var colorScaleVaccine = d3.scaleThreshold()
+    .domain([0, 500000, 700000, 2000000, 5000000, 7000000, 15000000, 35000000, 50000000])
+    .range(["#fff5f0"  ,"#fee0d2","#fcbba1" ,"#fc9272" ,"#fb6a4a" ,"#ef3b2c" ,"#cb181d" ,"#a50f15" ,"#67000d"]);
+
+    var legend = d3.select(".legend");
+    legend.html(null);
+
+    if(type === "cases"){
+        legend.selectAll(".legend-items")
+            .data(colorScaleCases.domain()).enter().append("li")
+            .attr("class", "legend-items")
+            .html(function(d,i){
+                // console.log(d)
+                return '<span style="background-color: '+ colorScaleCases.range()[i] +'"></span>'+d;
+            })
+    }else if(type === "vaccine"){
+        legend.selectAll(".legend-items")
+            .data(colorScaleVaccine.domain()).enter().append("li")
+            .attr("class", "legend-items")
+            .html(function(d,i){
+                // console.log(d)
+                return '<span style="background-color: '+ colorScaleVaccine.range()[i] +'"></span>'+d;
+            })
+    }
+
     var tool_tip = d3.tip()
         .attr("class", "d3-tipforline")
         .offset([-15, 0])
         .html(function(d) {
             
             
-            var fd = _.filter(indiaData, function(items){
+            var fd = _.filter(dataformap, function(items){
                 return items.stateId === d.properties.ST_CODE
             })
 
             
             
-            var fdjk = _.filter(indiaData, function(items){
+            var fdjk = _.filter(dataformap, function(items){
                 return items.stateId === "U08"
             })
             
             
             var html;
-
+            html = "<p>"+d.properties.ST_NM+"</p> ";
             
 
             if(fd[0] !== undefined){
-
-
-                
-                html = "<p>"+d.properties.ST_NM+"</p> "
-                
-            
-                    html += "<p>Total Confirmed Cases: <span>"+ parseInt(fd[0]["totalIndianCases"]).toLocaleString('en-IN') +"</span></p> "
-   
-
+                if(type === "cases"){
+                    html += "<p>Total Confirmed Cases: <span>"+ parseInt(fd[0]["totalIndianCases"]).toLocaleString('en-IN') +"</span></p>";
+                }else if(type === "vaccine"){
+                    html += "<p>Total Doses: <span>"+ parseInt(fd[0]["total_doses"]).toLocaleString('en-IN') +"</span></p>";
+                }
                 return html; 
             }else{
-                html = "<p>"+d.properties.ST_NM+"</p> "
-                html += "<p>Total Confirmed Cases: <span>-</span></p> "
+                if(type === "cases"){
+                    html += "<p>Total Confirmed Cases: <span>-</span></p>";
+                }else if(type === "vaccine"){
+                    html += "<p>Total Doses: <span>"+ parseInt(fd[0]["total_doses"]).toLocaleString('en-IN') +"</span>-</p>";
+                }
                 return html; 
             }
 
@@ -71,19 +87,7 @@ function drawIndiaMap(selector){
 
     var geoPath = d3.geoPath()
         .projection(projection)
-    // function centroids(boundarydata){
-    //     return boundarydata.map(function (d){
-    //         return {
-    //             center: projection(d3.geoCentroid(d)),
-    //             id: parseInt(d.id)
-    //         }
-    //     });
-    // }
-
-       
-        
-
-        
+ 
     d3.json(source, function(error, mapboundary){
         var statewise = topojson.feature(mapboundary, mapboundary.objects.collection).features;
         
@@ -99,22 +103,19 @@ function drawIndiaMap(selector){
                 .attr("stroke-width", 0.2)
                 .attr('fill', function(d,i){
                     
-                    var fd = _.filter(indiaData, function(items){
+                    var fd = _.filter(dataformap, function(items){
                         return items.stateId === d.properties.ST_CODE
                     })
                     
-                    var fd = _.filter(indiaData, function(items){
-                        return items.stateId === d.properties.ST_CODE
-                    })
 
-                    
-                    
                     if(fd[0] !== undefined){
 
-                        if(d.properties.ST_CODE !== "S09"){
-                            return colorScale(fd[0]["totalIndianCases"]);
-                        }else{
-                            return colorScale(fd[0]["totalIndianCases"]);
+                        if(type === "cases"){
+                            // console.log("cases", fd[0]["totalIndianCases"], typeof(fd[0]["totalIndianCases"]))
+                            return colorScaleCases(fd[0]["totalIndianCases"]);
+                        }else if(type === "vaccine"){
+                            // console.log("vaccine", fd[0], typeof(fd[0]["total_doses"]))
+                            return colorScaleVaccine(fd[0]["total_doses"]);
                         }
                         
                     }else{
@@ -129,32 +130,43 @@ function drawIndiaMap(selector){
                     
                       $(".state").removeClass("active")
                     $("."+d.properties.ST_CODE).addClass("active")
+                   
+                    d3.select("#statename").text(d.properties.ST_NM)
                     
-                    
-                    var fd = _.filter(indiaData, function(items){
+                    var fd = _.filter(dataformap, function(items){
                         return items.stateId === d.properties.ST_CODE
                     })
 
-                    var fdjk = _.filter(indiaData, function(items){
-                        return items.stateId === "U08"
-                    })
+                    console.log(fd[0])
 
-                    var U08Indian = parseInt(fdjk[0]["totalIndianCases"]);
-                    // var U08For = parseInt(fdjk[0]["totalForeignCases"]);
-                    var U08Cure = parseInt(fdjk[0]["Cured"]);
-                    var U08Death = parseInt(fdjk[0]["Death"]);
                     
+
+                    // var fdjk = _.filter(dataformap, function(items){
+                    //     return items.stateId === "U08";
+                    // })
+
+                    // var U08Indian = parseInt(fdjk[0]["totalIndianCases"]);
+                    // // var U08For = parseInt(fdjk[0]["totalForeignCases"]);
+                    // var U08Cure = parseInt(fdjk[0]["Cured"]);
+                    // var U08Death = parseInt(fdjk[0]["Death"]);
+                    console.log(fd[0]["totalIndianCases"])
                     if(fd[0] !== undefined){
-                        // return colorScale(fd[0]["totalIndianCases"]);
-                            d3.select("#statename").text(countrynames[d.properties.ST_CODE])
+
+                        if(type === "cases"){
                             animatedFormatData(fd[0]["totalIndianCases"],"#stateConfIndians")
-                            // animatedFormatData(fd[0]["totalForeignCases"],"#stateConfForeigners")
                             animatedFormatData(fd[0]["Cured"],"#stateCured")
                             animatedFormatData(fd[0]["Death"],"#stateDead")
+                            
+                        }else if(type === "vaccine"){
+                            animatedFormatData(fd[0]["dose1"],"#stateConfIndians")
+                            animatedFormatData(fd[0]["dose2"],"#stateCured")
+                            animatedFormatData(fd[0]["total_doses"],"#stateDead")
+                        }
+                       
+                            
                     }else{
-                        d3.select("#statename").text(d.properties.ST_NM)
+                        
                         d3.select("#stateConfIndians").text("-")
-                        // d3.select("#stateConfForeigners").text("-")
                         d3.select("#stateCured").text("-")
                         d3.select("#stateDead").text("-")
                     }

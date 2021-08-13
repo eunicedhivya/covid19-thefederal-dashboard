@@ -120,5 +120,25 @@ var indiaDistrictData = (function() {
     });
     return indiaDistrictData;
 })();
+// https://www.mygov.in/sites/default/files/covid/vaccine/vaccine_counts_today.json
+var statewiseVaccine = (function() {
+    var statewiseVaccine = null;
+    jQuery.ajax({
+        'async': false,
+        'global': false,
+        'dataType': 'json',
+        'url': 'data/vaccinedata.json',
+        'success': function(data) {
+            statewiseVaccine = data;
+            // console.log("data", data["list"]);
+            
+        }
+    });
+    return statewiseVaccine;
+})();
+
+console.log("indiaData", indiaData)
+console.log("statewiseVaccine", statewiseVaccine)
+
 
 

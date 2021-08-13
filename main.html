@@ -217,43 +217,45 @@
 					<p>Click on a state</p>
 					<div class="indiaData">
 						<div class="country">
-							<h1 id="statename">China</h1>
+							<h1 id="statename">India</h1>
 						</div>
 						<div class="otherdata">
 							<div class="totCases points">
-								<h2>Confirmed cases</h2>
+								<h2 id="datapoint1h2">Confirmed cases</h2>
 								<h1 id="stateConfIndians">80,757</h1>
 							</div>
 							<div class="newCases respondpoints">
-								<h2>Cured / Discharged</h2>
+								<h2 id="datapoint2h2">Cured / Discharged</h2>
 								<h1 id="stateCured">22</h1>
 							</div>
 							<div class="stateDeaths">
-								<!--<figure>-->
-								<!--	<img src="https://thefederal.com/embed/corona-dashboard-master/img/Asset6.png">-->
-								<!--</figure>-->
-								<div class="contentcolumne">
-									<h2>Deaths</h2>
+									<h2 id="datapoint3h2">Deaths</h2>
 									<h1 id="stateDead">22</h1>
-								</div>
 							</div>
 						</div>
 					</div>
 					
-
-					<div class="indiamap"><button class="allIndia">All India</button></div>
+					
+					<div class="indiamap">
+						
+						
+					</div>
+					<!-- <button class="allIndia">All India</button> -->
+					<div class="filterthemap-list">
+						<button class="filterthemap" data-type="vaccine">Vaccines</button>
+						<button class="filterthemap" data-type="cases">Cases</button>
+					</div>
 					<select class="dropdownstate" onchange="showStateData()"></select>
 					<ul class="legend">
-                        <!-- "#FEE5D9", "#FDD5C3", "#FCA487", "#FA7254", "#E83A2E", "#BC171C" -->
                         <li><span style="background-color: #fff5f0;"></span>0</li>
                         <li><span style="background-color: #fee0d2;"></span>2,000</li>
-                     <li><span style="background-color: #fcbba1;"></span>10,000</li>
-                     <li><span style="background-color: #fc9272;"></span>20,000</li>
-                     <li><span style="background-color: #fb6a4a;"></span>40,000</li>
-                     <li><span style="background-color: #ef3b2c;"></span>70,000</li>
-                     <li><span style="background-color: #cb181d;"></span>90,000</li>
-                     <li><span style="background-color: #a50f15;"></span>1,00,000</li>
-                     <li><span style="background-color: #67000d;"></span>1,20,000</li>
+						<li><span style="background-color: #fcbba1;"></span>10,000</li>
+						<li><span style="background-color: #fc9272;"></span>20,000</li>
+						<li><span style="background-color: #fb6a4a;"></span>40,000</li>
+						<li><span style="background-color: #ef3b2c;"></span>70,000</li>
+						<li><span style="background-color: #cb181d;"></span>90,000</li>
+						<li><span style="background-color: #a50f15;"></span>1,00,000</li>
+						<li><span style="background-color: #67000d;"></span>1,20,000</li>
                     </ul>
 					<!-- <figure class="highcharts-figure">
 						<div id="dailydeath-container"></div>
@@ -532,12 +534,14 @@
     <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
     <script src="https://thefederal.com/embed/common-js/underscore-min.js"></script>
     	<script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://thefederal.com/embed/corona-dashboard-master/js/loadData.js?v=1332020324750"></script>
+    <!-- <script src="https://thefederal.com/embed/corona-dashboard-master/js/loadData.js?v=1332020324750"></script> -->
+    <script src="js/loadData.js"></script>
     <script src="https://thefederal.com/embed/corona-dashboard-master/js/bootstrap-fullscreen-select.js?v=479986"></script>
     	<script src="https://thefederal.com/embed/corona-dashboard-master/js/chart2.js?v=119226"></script>
     <script src="https://thefederal.com/embed/corona-dashboard-master/js/functions.js?v=4343477834555524"></script>
      <script src="https://thefederal.com/embed/corona-dashboard-master/js/accordion.js?v=55545"></script>
-    <script src="https://covid19.thefederal.com/js/indiamap.js?v=255348737888797492"></script>
+    <!-- <script src="https://covid19.thefederal.com/js/indiamap.js?v=255348737888797492"></script> -->
+    <script src="js/indiamap.js"></script>
     <!--<script src="https://thefederal.com/embed/corona-dashboard-master/js/barchart.js?v=3434"></script>-->
     <!--<script src="https://thefederal.com/embed/corona-dashboard-master/js/linechart.js?v=3322"></script>-->
      <script src="https://thefederal.com/embed/corona-dashboard-master/js/table.js?v=3323"></script>
@@ -566,12 +570,64 @@
 		var defaultMapData = countrywisedata.filter(function(item){
             return item['countryId'] === "156" ;
         })
+		var defaultVaccineData = statewiseVaccine.filter(function(item){
+            return item['stateId'] === "S00" ;
+        })
         var defaultIndiaMapData = indiaData.filter(function(item){
             return item['stateId'] === "S13" ;
         })
         var filterData = countrywisedata.filter(function(item){
             return item['Total Cases'] !== "NULL" ;
         })
+
+		$('.filterthemap').on("click", function(){
+			
+			$(".filterthemap").removeClass("active")
+			$(this).addClass("active")
+
+			var fdType = $(this).data()['type'];
+			console.log(fdType)
+			d3.select("#statename").text("India")
+			if(fdType === "cases"){
+				drawIndiaMap(".indiamap", fdType, indiaData);
+				d3.select("#datapoint1h2").text("Confirmed cases")
+				d3.select("#datapoint2h2").text("Cured / Discharged")
+				d3.select("#datapoint3h2").text("Deaths")
+
+				animatedFormatData(defaultIndiaMapData[0]["totalIndianCases"],"#stateConfIndians")
+				animatedFormatData(defaultIndiaMapData[0]["Cured"],"#stateCured")
+				animatedFormatData(defaultIndiaMapData[0]["Death"],"#stateDead")
+
+			}else if(fdType === "vaccine"){
+				drawIndiaMap(".indiamap", fdType, statewiseVaccine);
+				
+				d3.select("#datapoint1h2").text("Dose 1")
+				d3.select("#datapoint2h2").text("Dose 2")
+				d3.select("#datapoint3h2").text("Total Doses")
+				animatedFormatData(defaultVaccineData[0]["dose1"],"#stateConfIndians")
+				animatedFormatData(defaultVaccineData[0]["dose2"],"#stateCured")
+				animatedFormatData(defaultVaccineData[0]["total_doses"],"#stateDead")
+			}
+
+			//     if(type === "cases"){
+                            
+                    //         d3.select("#datapoint1h2").text("Confirmed cases")
+                    //         d3.select("#datapoint2h2").text("Cured / Discharged")
+                    //         d3.select("#datapoint3h2").text("Deaths")     
+                            
+                            
+                    //     }else if(type === "vaccine"){
+
+
+                    //         d3.select("#datapoint1h2").text("Dose 1")
+                    //         d3.select("#datapoint2h2").text("Dose 2")
+                    //         d3.select("#datapoint3h2").text("Total Doses")
+
+                            
+                    //     }
+			
+			
+		})
          $('.allIndia').on("click", function(){
             d3.select("#statename").text("India")
              $(".state").removeClass("active")
@@ -664,7 +720,7 @@
             .text(currentData[0]["recovered_p"]+"%")
             
         //drawWorldMap(".worldmap");
-        drawIndiaMap(".indiamap");
+        drawIndiaMap(".indiamap", "cases", indiaData);
         createDropDowns(".dropdown", filterData, "countryId", "Country", "world")
         createDropDowns(".dropdownstate", indiaData, "stateId", "StateName", "india")
         // drawBarchart(".dailydeathbar")
@@ -698,10 +754,10 @@
         });
         $(".allIndia").on("click", function(){
             $('#statename').html('India');
-		animatedFormatData(indiaTotal[0]["totalIndians"],"#stateConfIndians")
-        animatedFormatData(indiaTotal[0]["totalCured"],"#stateCured")
-        animatedFormatData(indiaTotal[0]["totalDeaths"],"#stateDead")
-});
+			animatedFormatData(indiaTotal[0]["totalIndians"],"#stateConfIndians")
+			animatedFormatData(indiaTotal[0]["totalCured"],"#stateCured")
+			animatedFormatData(indiaTotal[0]["totalDeaths"],"#stateDead")
+		});
 		drawTable(dailyDeathData,'#dailydeathstable')
 		drawTable(dailyTotalDeathData,'#totaldeathstable')
 		

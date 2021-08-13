@@ -1,553 +1,574 @@
-#myearth{
-	width: 100%;
-	max-width: 900px;
-	margin: 0 auto;
-  }
+#myearth {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
 .data-source {
-    width: 100%;
-    text-align: center;
-    position: relative;
+  width: 100%;
+  text-align: center;
+  position: relative;
 }
 .data-source div {
-    font-size: 10px;
-    line-height: 16px;
-    margin: 10px 0 0 0;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-    width: 354px;
-    display: inline-block;
-    position: relative;
+  font-size: 10px;
+  line-height: 16px;
+  margin: 10px 0 0 0;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  width: 354px;
+  display: inline-block;
+  position: relative;
 }
 
-  .earth-overlay {
-    color: #fff;
-    border: 1px solid #cccccc;
-	border-radius: 10px;
-	background-color: #FFFFFF;
-    text-align: center;
-	width: 150px;
-	font-family: 'Rubik', sans-serif;
-	margin-top: -200px;
-	margin-left: -95px;
-	
+.earth-overlay {
+  color: #fff;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  background-color: #ffffff;
+  text-align: center;
+  width: 150px;
+  font-family: "Rubik", sans-serif;
+  margin-top: -200px;
+  margin-left: -95px;
 }
 
 .earth-overlay img {
-    width: 100%;
-    height: auto;
-    margin-bottom: -5px;
-    border-radius: 10px 10px 0 0
+  width: 100%;
+  height: auto;
+  margin-bottom: -5px;
+  border-radius: 10px 10px 0 0;
 }
 
 .earth-overlay .title {
-    padding: 5px;
-	background-color: #FFFFFF;
-	color: #000000;
+  padding: 5px;
+  background-color: #ffffff;
+  color: #000000;
 }
-.earth-overlay .title h2{
-	font-size: 18px;
-	line-height: 18px;
-	margin: 5px 0 5px 0;
+.earth-overlay .title h2 {
+  font-size: 18px;
+  line-height: 18px;
+  margin: 5px 0 5px 0;
 }
-.earth-overlay .title p{
-	font-size: 15px;
-    line-height: 18px;
+.earth-overlay .title p {
+  font-size: 15px;
+  line-height: 18px;
 }
-.earth-overlay .title p span{
-	font-size: 20px;
-	font-weight: bold;
-	/* color: #000000; */
+.earth-overlay .title p span {
+  font-size: 20px;
+  font-weight: bold;
+  /* color: #000000; */
 }
-.earth-overlay .groupData{
-	padding: 5px;
-	border-top: 1PX solid #CCCCCC;
-	background-color: #FFFFFF;
-	/* background-color: #940013; */
+.earth-overlay .groupData {
+  padding: 5px;
+  border-top: 1px solid #cccccc;
+  background-color: #ffffff;
+  /* background-color: #940013; */
 }
-.earth-overlay .groupData p{
-	font-size: 14px;
-    line-height: 20px;
-	margin-bottom: 5px !important;
-	color: #cccccc;
+.earth-overlay .groupData p {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 5px !important;
+  color: #cccccc;
 }
-.earth-overlay .groupData p span{
-	font-size: 20px;
-	font-weight: bold;
-	/* color: #FFFFFF; */
+.earth-overlay .groupData p span {
+  font-size: 20px;
+  font-weight: bold;
+  /* color: #FFFFFF; */
 }
 
 .earth-overlay .changed {
-    font-size: .7em
+  font-size: 0.7em;
 }
 
 .earth-overlay .info {
-    padding: 5px;
-    border-radius: 0 0 10px 10px
+  padding: 5px;
+  border-radius: 0 0 10px 10px;
 }
 
 .deathpoints {
-    color: #000000 !important;
+  color: #000000 !important;
 }
 .respondpoints {
-    color: #0bab02 !important;
+  color: #0bab02 !important;
 }
-.criticalcases{
-    color: #e67e22 !important;
+.criticalcases {
+  color: #e67e22 !important;
 }
-.newcases{
-    color: #de0c0c !important;
+.newcases {
+  color: #de0c0c !important;
 }
- .points {
-    color: #035add !important;
+.points {
+  color: #035add !important;
 }
- .greypoints, .greypoints h1, .greypoints p {
-    color: #828282 !important;
+.greypoints,
+.greypoints h1,
+.greypoints p {
+  color: #828282 !important;
 }
 
+.groupData p {
+  margin: 0 0 0 0 !important;
+  padding: 0 0 0 0 !important;
+  font-size: 14px;
+}
 
-  
-  .groupData p{
-	margin: 0 0 0 0 !important;
-	padding: 0 0 0 0 !important;
-	  font-size: 14px;
-  }
- 
-  .groupData p span{
-	margin: 0 0 0 0 !important;
-	padding: 0 0 0 0 !important;
-	  font-size: 20px;
-  }
+.groupData p span {
+  margin: 0 0 0 0 !important;
+  padding: 0 0 0 0 !important;
+  font-size: 20px;
+}
 
-  .earth-overlay img {
-    width: 100%;
-    height: auto;
-    margin-bottom: -5px;
-    border-radius: 10px 10px 0 0;
-	}
+.earth-overlay img {
+  width: 100%;
+  height: auto;
+  margin-bottom: -5px;
+  border-radius: 10px 10px 0 0;
+}
 
-	.map-wrapper{
-		margin: 20px 0 25px 0;
-	}
+.map-wrapper {
+  margin: 20px 0 25px 0;
+}
 .covidDash-wrapper {
-	max-width: 1040px;
-	/*width: 80%;*/
-	display: block;
-	padding: 20px 0px;
-	box-sizing: border-box;
-	margin: 0 auto;
-	overflow: hidden;
+  max-width: 1040px;
+  /*width: 80%;*/
+  display: block;
+  padding: 20px 0px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  overflow: hidden;
 }
 .covidDash-wrapper .dashboard-header {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .covidDash-wrapper .dashboard-title {
-	font-family: 'Rubik', sans-serif;
-	font-size: 51px;
-	line-height: 49px;
-	font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  font-size: 51px;
+  line-height: 49px;
+  font-weight: 400;
 }
-.covidDash-wrapper .dashboard-header figure, .deathdata figure, 
+.covidDash-wrapper .dashboard-header figure,
+.deathdata figure,
 .recoverdata figure {
-	margin: 0;
-	z-index: 999;
+  margin: 0;
+  z-index: 999;
 }
-.covidDash-wrapper .dashboard-header figure img, .deathdata figure img, 
+.covidDash-wrapper .dashboard-header figure img,
+.deathdata figure img,
 .recoverdata figure img {
-	max-width: 100%;
+  max-width: 100%;
 }
 .covidDash-wrapper .total-affected {
-	text-align: center;
-	margin: 45px 0;
+  text-align: center;
+  margin: 45px 0;
 }
 .covidDash-wrapper .total-affected h1#totAffected {
-	font-family: 'Rubik', sans-serif;
-	font-size: 160px;
-	line-height: 170px;
-	/*line-height: 236px;*/
-	font-weight: 400;
-	margin: 0 auto;
+  font-family: "Rubik", sans-serif;
+  font-size: 160px;
+  line-height: 170px;
+  /*line-height: 236px;*/
+  font-weight: 400;
+  margin: 0 auto;
 }
 .covidDash-wrapper .total-affected p {
-	font-family: 'Rubik', sans-serif;
-	font-size: 28px;
-	line-height: 33px;
-	font-weight: 300;
-	margin: 0 auto;
+  font-family: "Rubik", sans-serif;
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 300;
+  margin: 0 auto;
 }
-.deathdata, .recoverdata {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.deathdata,
+.recoverdata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .deaths-recoverData {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 65px;
 }
 .deathdata {
-	background: #1d1d1b
+  background: #1d1d1b;
 }
 
 .recoverdata {
-	background: #eaf4ceba;
+  background: #eaf4ceba;
 }
-.deathdata h2, .deathdata h1 {
-	color: #fff!important;
+.deathdata h2,
+.deathdata h1 {
+  color: #fff !important;
 }
-.deathdata h2, .recoverdata h2 {
-	font-family: 'Rubik', sans-serif;
-	font-size: 40px;
-	line-height: 45px;
-	font-weight: 300;
-	margin: 0 auto;
+.deathdata h2,
+.recoverdata h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 300;
+  margin: 0 auto;
 }
-.deathdata h1, .recoverdata h1 {
-	font-family: 'Rubik', sans-serif;
-	font-size: 70px;
-	line-height: 90px;
-	font-weight: 300;
-	margin: 0 auto;
+.deathdata h1,
+.recoverdata h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 70px;
+  line-height: 90px;
+  font-weight: 300;
+  margin: 0 auto;
 }
 
-.deathdata, .recoverdata {
-	padding: 15px 40px;
-	margin: 5px;
-	box-sizing: border-box;
-	border-radius: 20px;
+.deathdata,
+.recoverdata {
+  padding: 15px 40px;
+  margin: 5px;
+  box-sizing: border-box;
+  border-radius: 20px;
 }
 .deathdata {
-	padding: 15px 60px;
+  padding: 15px 60px;
 }
-.deathCount , .recoverCount {
-	margin-left: 25px;
+.deathCount,
+.recoverCount {
+  margin-left: 25px;
 }
 .barchart {
-	display: flex;
-	justify-content: space-between;
-	/* align-items: center; */
-	margin: 45px 0;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin: 45px 0;
 }
 
-.dailydeathbar .barchart, .dailydeathline .barchart  {
-	margin: 10px 0;
+.dailydeathbar .barchart,
+.dailydeathline .barchart {
+  margin: 10px 0;
 }
-.barchart .mildCondition h2, .barchart .mildCondition h1 {
-	color: #f8b133 !important;
+.barchart .mildCondition h2,
+.barchart .mildCondition h1 {
+  color: #f8b133 !important;
 }
-.barchart .criticalCondition h2, .barchart .criticalCondition h1 {
-	color: #e67e22 !important;
+.barchart .criticalCondition h2,
+.barchart .criticalCondition h1 {
+  color: #e67e22 !important;
 }
 .totalData {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .countrywiseData {
-	display: flex;
-	margin-left:10px;
-	justify-content: center;
-	flex-direction: column;
+  display: flex;
+  margin-left: 10px;
+  justify-content: center;
+  flex-direction: column;
 }
 .countrywiseData div {
-	margin: 20px 0;
+  margin: 20px 0;
 }
-.dangerData, .totalandNew {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.dangerData,
+.totalandNew {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.topCounts, .downCounts {
-	display: flex;
-	/* justify-content: center; */
-	align-items: center;
-	padding: 5px 0;
+.topCounts,
+.downCounts {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 5px 0;
 }
 .topCounts {
-	border-bottom: 1px solid #6f6f6e;
+  border-bottom: 1px solid #6f6f6e;
 }
 .totalandNew {
-	background: #ececec;
-	padding: 10px 20px;
-	box-sizing: border-box;
-	border-radius: 6%;
+  background: #ececec;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 6%;
 }
 .dangerData {
-	margin: 25px 0;
+  margin: 25px 0;
 }
 .dangerData figure {
-	margin: 0;
+  margin: 0;
 }
 .deathCounts {
-	margin-left: 50px;
+  margin-left: 50px;
 }
 .countValue {
-	padding: 10px 20px;
-	box-sizing: border-box;
+  padding: 10px 20px;
+  box-sizing: border-box;
 }
-.topCounts h2, .downCounts h2,
+.topCounts h2,
+.downCounts h2,
 .criticalData h2 {
-	font-family: 'Rubik', sans-serif;
-	font-size: 22px;
-	line-height: 26px;
-	font-weight: 500;
-	margin: 0 auto;
+  font-family: "Rubik", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 500;
+  margin: 0 auto;
 }
-.topCounts h1, .downCounts h1,
+.topCounts h1,
+.downCounts h1,
 .criticalData h1 {
-	font-family: 'Rubik', sans-serif;
-	font-size: 91px;
-	line-height: 108px;
-	font-weight: 400;
-	margin: 0 auto;
-	color: #e20613;
-	text-align:center;
+  font-family: "Rubik", sans-serif;
+  font-size: 91px;
+  line-height: 108px;
+  font-weight: 400;
+  margin: 0 auto;
+  color: #e20613;
+  text-align: center;
 }
 /*.barchart .left-chart img {
 	width: 900px;
 }*/
 .criticalData {
-	border: 1px solid #d9d9d9;
-	border-radius: 6%;
-	padding: 6px 20px;
-	box-sizing: border-box;
+  border: 1px solid #d9d9d9;
+  border-radius: 6%;
+  padding: 6px 20px;
+  box-sizing: border-box;
 }
-.criticalCounts, .recoverCounts {
-	padding: 10px 0;
+.criticalCounts,
+.recoverCounts {
+  padding: 10px 0;
 }
 .criticalData h2 {
-	color: #868686
+  color: #868686;
 }
 .recoverCounts {
-	border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
 .criticalData h1 {
-	color: #39a935
+  color: #39a935;
 }
 .barchart .totalData div {
-	margin: 10px 18px;
+  margin: 10px 18px;
 }
 .barchart .totalData h2 {
-	font-family: 'Rubik', sans-serif;
-	font-size: 21px;
-	line-height: 28px;
-	font-weight: 300;
-	margin: 0 auto;
+  font-family: "Rubik", sans-serif;
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: 300;
+  margin: 0 auto;
 }
 .barchart .totalData h1 {
-	font-family: 'Rubik', sans-serif;
-	font-size: 45px;
-	line-height: 55px;
-	font-weight: 700;
-	margin: 0 auto;
+  font-family: "Rubik", sans-serif;
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: 700;
+  margin: 0 auto;
 }
 .barchart .right-chart h1 {
-	font-family: 'Rubik', sans-serif;
-	font-size: 27px;
-	line-height: 32px;
-	font-weight: 300;
-	margin: 0 auto;
-	/* padding-right: 25px;
+  font-family: "Rubik", sans-serif;
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 300;
+  margin: 0 auto;
+  /* padding-right: 25px;
 	box-sizing: border-box; */
 }
 .barchart .right-chart {
-/*	padding-left: 15px;*/
-	box-sizing: border-box;
+  /*	padding-left: 15px;*/
+  box-sizing: border-box;
 }
 .barchart .right-chart p {
-	font-family: 'Rubik', sans-serif;
-	font-size: 30px;
-	line-height: 55px;
-	font-weight: 700;
-	margin: 0 auto;
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+  line-height: 55px;
+  font-weight: 700;
+  margin: 0 auto;
 }
 .map-wrapper {
-	display: flex;
+  display: flex;
 }
 .world-impact h1 {
-	font-family: 'Rubik', sans-serif;
-	font-size: 46px;
-	line-height: 55px;
-	font-weight: 400;
-	margin: 0 auto;
+  font-family: "Rubik", sans-serif;
+  font-size: 46px;
+  line-height: 55px;
+  font-weight: 400;
+  margin: 0 auto;
 }
 .world-impact p {
-	font-family: 'Rubik', sans-serif;
-	font-size: 23px;
-	line-height: 27px;
-	font-weight: 400;
-	color: #9c9b9b;
-	margin: 6px auto !important;
+  font-family: "Rubik", sans-serif;
+  font-size: 23px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #9c9b9b;
+  margin: 6px auto !important;
 }
 .countrywiseData h2 {
-	font-family: 'Rubik', sans-serif;
-	font-size: 22px;
-	line-height: 26px;
-	font-weight: 500;
-	/* color: #e20613; */
-	margin: 0 auto;
+  font-family: "Rubik", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 500;
+  /* color: #e20613; */
+  margin: 0 auto;
 }
 .countrywiseData h1 {
-	font-family: 'Rubik', sans-serif;
-	font-size: 70px;
-	line-height: 80px;
-	font-weight: 400;
-	/* color: #e20613; */
-	margin: 0 auto;
+  font-family: "Rubik", sans-serif;
+  font-size: 70px;
+  line-height: 80px;
+  font-weight: 400;
+  /* color: #e20613; */
+  margin: 0 auto;
 }
 .countrywiseData .country h1 {
-	font-size: 46px;
-	line-height: 55px;
+  font-size: 46px;
+  line-height: 55px;
 }
 /* .countrywiseData .newCases h2, .countrywiseData .newCases h1 {
 	color: #f29100 !important;
 } */
-.worldmap, .indiamap {
-    /* width: 75%; */
-    width: 100%;
-	position: relative;
+.worldmap,
+.indiamap {
+  /* width: 75%; */
+  width: 100%;
+  position: relative;
 }
 
 .countrywiseData {
-	width: 25%;
+  width: 25%;
 }
-.dailyDeaths h1, .totalDeaths h1, .indiadata-charts h1 {
-	font-family: 'Rubik', sans-serif;
-	font-size: 46px;
-	line-height: 55px;
-	font-weight: 400;
-	/*color: #e20613;*/
-	margin: 0 auto;
+.dailyDeaths h1,
+.totalDeaths h1,
+.indiadata-charts h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 46px;
+  line-height: 55px;
+  font-weight: 400;
+  /*color: #e20613;*/
+  margin: 0 auto;
 }
-.dailyDeaths p, .totalDeaths p {
-	font-family: 'Rubik', sans-serif;
-	font-size: 22px;
-	line-height: 26px;
-	font-weight: 300;
-	/*color: #e20613;*/
-	margin: 0 auto;
+.dailyDeaths p,
+.totalDeaths p {
+  font-family: "Rubik", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 300;
+  /*color: #e20613;*/
+  margin: 0 auto;
 }
-.dailyDeaths, .totalDeaths, .indiadata-charts {
-	margin: 55px 0;
+.dailyDeaths,
+.totalDeaths,
+.indiadata-charts {
+  margin: 55px 0;
 }
-#dailyconfirmed-container, #dailydeceased-container {
-    margin-top: 20px;
+#dailyconfirmed-container,
+#dailydeceased-container {
+  margin-top: 20px;
 }
 .country {
-	stroke: #ffffff;
-	fill: #000000;
-    stroke-width: 0.05;
+  stroke: #ffffff;
+  fill: #000000;
+  stroke-width: 0.05;
 }
 
 /* .country:hover {
     fill: #000000;
 } */
 
-.country-center{
-	fill: red;
-	stroke: brown;
-    stroke-width: 0.5;
+.country-center {
+  fill: red;
+  stroke: brown;
+  stroke-width: 0.5;
 }
 
-.maptooltip{
-	background-color: #000;
-	color: #FFFFFF;
-	position: absolute;
-	padding: 5px 10px;
-	box-sizing: border-box;
-	transition: all 0.2s;
-	display: none;
+.maptooltip {
+  background-color: #000;
+  color: #ffffff;
+  position: absolute;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  transition: all 0.2s;
+  display: none;
 }
 
-
-.left-chart .horstackchart div{
-	display: inline-block;
-    line-height: 75px;
-	font-size: 30px;
-	font-family: 'Rubik', sans-serif;
-	color: #FFFFFF;
-	box-sizing: border-box;
+.left-chart .horstackchart div {
+  display: inline-block;
+  line-height: 75px;
+  font-size: 30px;
+  font-family: "Rubik", sans-serif;
+  color: #ffffff;
+  box-sizing: border-box;
 }
-.right-chart .horstackchart div{
-	display: inline-block;
-    line-height: 48px;
-	font-size: 38px;
-	font-family: 'Rubik', sans-serif;
-	color: #FFFFFF;
-	box-sizing: border-box;
+.right-chart .horstackchart div {
+  display: inline-block;
+  line-height: 48px;
+  font-size: 38px;
+  font-family: "Rubik", sans-serif;
+  color: #ffffff;
+  box-sizing: border-box;
 }
-.horstackchart .bar100{
-    width: 100%;
-	/*border-radius: 15px;*/
-	 -webkit-border-top-left-radius: 15px;
-    -webkit-border-bottom-left-radius: 15px;
-    -moz-border-radius-topleft: 15px;
-    -moz-border-radius-bottomleft: 15px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+.horstackchart .bar100 {
+  width: 100%;
+  /*border-radius: 15px;*/
+  -webkit-border-top-left-radius: 15px;
+  -webkit-border-bottom-left-radius: 15px;
+  -moz-border-radius-topleft: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 
-    -webkit-border-top-right-radius: 8px;
--webkit-border-bottom-right-radius: 8px;
--moz-border-radius-topright: 8px;
--moz-border-radius-bottomright: 8px;
-border-top-right-radius: 8px;
-border-bottom-right-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  -moz-border-radius-bottomright: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .left-chart .horstackchart .bar100 {
-	height: 75px;
-	background-color: #f8b133;
-	text-align: right;
+  height: 75px;
+  background-color: #f8b133;
+  text-align: right;
 }
 
 .right-chart .horstackchart .bar100 {
-	height: 48px;
-	background-color: #c6c6c5;
-	text-align: left;
-	margin: 11px 0;
+  height: 48px;
+  background-color: #c6c6c5;
+  text-align: left;
+  margin: 11px 0;
 }
-.horstackchart, .horstackchart div{
-	transition: all 1.5s;
+.horstackchart,
+.horstackchart div {
+  transition: all 1.5s;
 }
-.horstackchart #barcritical{
-	height: 100%;
-    width: 20%;
-    background-color: #e67e22;
-    /* border-radius: 15px; */
-    -webkit-border-top-right-radius: 15px;
-    -webkit-border-bottom-right-radius: 15px;
-    -moz-border-radius-topright: 15px;
-    -moz-border-radius-bottomright: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    text-align: center;
-    color: transparent;
-	
+.horstackchart #barcritical {
+  height: 100%;
+  width: 20%;
+  background-color: #e67e22;
+  /* border-radius: 15px; */
+  -webkit-border-top-right-radius: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  -moz-border-radius-topright: 15px;
+  -moz-border-radius-bottomright: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-align: center;
+  color: transparent;
 }
-.horstackchart #baroutcome{
-	height: 100%;
-    width: 20%;
-    background-color: #828282;
-    /*border-radius: 15px;*/
-    text-align: left;
-    padding: 0 0 0 11px;
-    /* box-sizing: border-box; */
-	-webkit-border-top-left-radius: 15px;
-    -webkit-border-bottom-left-radius: 15px;
-    -moz-border-radius-topleft: 15px;
-    -moz-border-radius-bottomleft: 15px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+.horstackchart #baroutcome {
+  height: 100%;
+  width: 20%;
+  background-color: #828282;
+  /*border-radius: 15px;*/
+  text-align: left;
+  padding: 0 0 0 11px;
+  /* box-sizing: border-box; */
+  -webkit-border-top-left-radius: 15px;
+  -webkit-border-bottom-left-radius: 15px;
+  -moz-border-radius-topleft: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 /*svg.barchart{*/
 /*	background-color: #f5f5f5;*/
 /*}*/
 
-.barchart text{
-	font-family: 'Rubik', sans-serif;
+.barchart text {
+  font-family: "Rubik", sans-serif;
 }
 
 /*.tick text{*/
@@ -555,253 +576,262 @@ border-bottom-right-radius: 8px;
 /*}*/
 
 .dangerData figure img {
-	max-width: 100%;
+  max-width: 100%;
 }
-.zoomControls{
-	position: absolute;
-    top: 15px;
-    left: 15px;
+.zoomControls {
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
-.zoomControls button{
-    cursor:pointer;
-	border: none;
-    background-color: #93C01F;
-    color: #FFFFFF;
-    font-size: 20px;
-    padding: 2px 10px;
-    margin: 5px;
+.zoomControls button {
+  cursor: pointer;
+  border: none;
+  background-color: #93c01f;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 2px 10px;
+  margin: 5px;
 }
 #lastupdatedtime {
-	font-size: 12px;
-    line-height: 16px;
-    margin: 10px 0 0 0;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 10px 0 0 0;
 }
 .mobileSelect-container.white .list-container .mobileSelect-control {
-    color: white !important;
+  color: white !important;
 }
 .mobileSelect-container.white .list-container .mobileSelect-control.selected {
-    background-color: #DC4447 !important;
-    color: white !important;
+  background-color: #dc4447 !important;
+  color: white !important;
 }
-.dropdown, .dropdownstate,.btn-mobileSelect-gen {
-	background-color: #000000;
-    color: #ffffff;
-	padding: 7px 10px 5px 10px;
-	display: none;
+.dropdown,
+.dropdownstate,
+.btn-mobileSelect-gen {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 7px 10px 5px 10px;
+  display: none;
 }
-.state.active{
-    fill: #000000;
+.state.active {
+  fill: #000000;
 }
-.state:hover{
-	fill: #000000;
-	cursor: pointer;
+.state:hover {
+  fill: #000000;
+  cursor: pointer;
 }
 
-.legend{
-	font-family: 'Rubik', sans-serif;
-	list-style: none;
-	margin: 10px 0 30px 0;
-    padding: 0;
+.legend {
+  font-family: "Rubik", sans-serif;
+  list-style: none;
+  margin: 10px 0 30px 0;
+  padding: 0;
 }
-.legend li{
-	display: inline-block;
-	margin-right: 15px;
+.legend li {
+  display: inline-block;
+  margin-right: 15px;
 }
-.legend li span{
-	width: 10px;
-	height: 10px;
-	display: inline-block;
-	background-color: #000000;
-	margin-right: 5px;
-	border: 1px solid #000000;
+.legend li span {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #000000;
+  margin-right: 5px;
+  border: 1px solid #000000;
 }
 
 .stateDeaths {
-    margin: -10px 0 0 0;
-    padding: 5px 10px;
-    background: #000000;
-    box-sizing: border-box;
-    border-radius: 15px;
+  margin: -10px 0 0 0;
+  padding: 5px 10px;
+  background: #000000;
+  box-sizing: border-box;
+  border-radius: 15px;
 }
 .stateDeaths figure {
-	padding: 0;
-    margin: 0;
-    width: 55px;
+  padding: 0;
+  margin: 0;
+  width: 55px;
 }
 .contentcolumne {
-    padding-left: 10px
+  padding-left: 10px;
 }
 .stateDeaths img {
-	max-width: 100%;
-	padding: 0;
-    margin: 0;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
 }
-.stateDeaths h1,  .stateDeaths h2{
-	color: #FFFFFF;
+.stateDeaths h1,
+.stateDeaths h2 {
+  color: #ffffff;
 }
-.anchor-nav{
-	text-align: center;
-	margin: 50px auto;
+.anchor-nav {
+  text-align: center;
+  margin: 50px auto;
 }
 
 .anchor-nav ul {
-	list-style: none;
+  list-style: none;
 }
 
-.anchor-nav ul li{
-	display: inline-block;
+.anchor-nav ul li {
+  display: inline-block;
 }
 
-.anchor-nav ul li a{
-	text-decoration: none;
-    padding: 5px 15px;
-	font-family: 'Rubik', sans-serif;
-	font-size: 14px;
-    color: white;
-    background-color: #000000;
-    border-radius: 5px;
-    text-transform: uppercase;
+.anchor-nav ul li a {
+  text-decoration: none;
+  padding: 5px 15px;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  color: white;
+  background-color: #000000;
+  border-radius: 5px;
+  text-transform: uppercase;
 }
 /* Accordion */
 
 .faqs .accordion {
-	font-family: 'Rubik', sans-serif;
-    color: #444;
-    cursor: pointer;
-    padding: 9px;
-    width: 100%;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    border-right: 1px solid transparent;
-    border-left: 1px solid transparent;
-    text-align: left;
-    outline: none;
-    font-size: 16px;
-    transition: 0.4s;
-    background-color: transparent;
-    font-weight: 500;
-  }
-  .anchor-nav ul {
-      list-style: none;
-      padding:0;
-  }
-  .faqs .active, .faqs .accordion:hover {
-	background-color: #E8E8E8; 
-  }
-  
-  .faqs .panel {
-	padding: 0 18px;
-	display: none;
-	background-color: white;
-	overflow: hidden;
-  }
-.faqs .accordion:after {
-	content: '\02795'; /* Unicode character for "plus" sign (+) */
-	font-size: 16px;
-	color: transparent;  
-  	text-shadow: 0 0 0 red;
-	float: right;
-	margin-left: 5px;
-	line-height: 28px;
-  }
-  
-  .faqs .active:after {
-	content: "\2796"; /* Unicode character for "minus" sign (-) */
-  }
-.faqs h1{
-	font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
+  color: #444;
+  cursor: pointer;
+  padding: 9px;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  transition: 0.4s;
+  background-color: transparent;
+  font-weight: 500;
 }
-  .faqs p{
-	font-size: 15px;
-	line-height: 17px;
-	font-family: 'Rubik', sans-serif;
-	margin: 15px 0!important;
-  }
-  .faqs .panel p{
-	font-size: 15px;
-	line-height: 17px;
-	font-family: 'Rubik', sans-serif;
-  }
- .chartcontent{
-    display: grid;
-    grid-template-columns: 100%;
-    margin-bottom: 15px;
-    line-height:18px;
-  }
-  
-  .chartcontent p{
-    text-align: left;
-    margin:14px 0 !important;
-  }
-  
-  .chartcontent .chartnav{
-    text-align: left;
-    margin: 12px 0 4px 0;
-    
-  }
-  
-  .chartcontent .chartnav button{
-    background-color: #dddddd;
-    color: #4c4c4c;
-    border: none;
-    padding: 5px 10px;
-    font-size: 12px;
-    font-family: 'Rubik', sans-serif;
-    border-radius: 5px;
-    text-transform: uppercase;
-  }
-  .chartcontent .chartnav button.active{
-    background-color: #d4d2d2;
-    color: #F00;
-    outline:0;
-  }
-  
-  .chartcontent .chartnav button:hover{
-    background-color: rgb(164, 1, 1);
-    color: #FFF;
-  }
-  .chartcontent .chartnav buttonbutton:focus {outline:0;}
+.anchor-nav ul {
+  list-style: none;
+  padding: 0;
+}
+.faqs .active,
+.faqs .accordion:hover {
+  background-color: #e8e8e8;
+}
 
-  .dailyDeaths p, .totalDeaths p{
-      margin: 0 !important;
-  }
+.faqs .panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+.faqs .accordion:after {
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
+  font-size: 16px;
+  color: transparent;
+  text-shadow: 0 0 0 red;
+  float: right;
+  margin-left: 5px;
+  line-height: 28px;
+}
 
-  .table table {
-      width: 100%;
-      font-family: 'Rubik', sans-serif;
-      text-align: left;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  .table td, .table th {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
+.faqs .active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+.faqs h1 {
+  font-family: "Rubik", sans-serif;
+}
+.faqs p {
+  font-size: 15px;
+  line-height: 17px;
+  font-family: "Rubik", sans-serif;
+  margin: 15px 0 !important;
+}
+.faqs .panel p {
+  font-size: 15px;
+  line-height: 17px;
+  font-family: "Rubik", sans-serif;
+}
+.chartcontent {
+  display: grid;
+  grid-template-columns: 100%;
+  margin-bottom: 15px;
+  line-height: 18px;
+}
 
-  .table td{
-      font-size: 14px;
-  }
-  
-  .table tr:nth-child(even){background-color: #f2f2f2;}
-  
-  .table tr:hover {background-color: #ddd;}
-  
-  .table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #000000;
-    color: white;
-    font-weight: 500;
-  }
+.chartcontent p {
+  text-align: left;
+  margin: 14px 0 !important;
+}
+
+.chartcontent .chartnav {
+  text-align: left;
+  margin: 12px 0 4px 0;
+}
+
+.chartcontent .chartnav button {
+  background-color: #dddddd;
+  color: #4c4c4c;
+  border: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-family: "Rubik", sans-serif;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.chartcontent .chartnav button.active {
+  background-color: #d4d2d2;
+  color: #f00;
+  outline: 0;
+}
+
+.chartcontent .chartnav button:hover {
+  background-color: rgb(164, 1, 1);
+  color: #fff;
+}
+.chartcontent .chartnav buttonbutton:focus {
+  outline: 0;
+}
+
+.dailyDeaths p,
+.totalDeaths p {
+  margin: 0 !important;
+}
+
+.table table {
+  width: 100%;
+  font-family: "Rubik", sans-serif;
+  text-align: left;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table td,
+.table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table td {
+  font-size: 14px;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tr:hover {
+  background-color: #ddd;
+}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #000000;
+  color: white;
+  font-weight: 500;
+}
 /*@media screen and (min-width: 401px) and (max-width: 767px) {*/
 /*    .anchor-nav ul li a {*/
 /*        font-size:11px !important;*/
 /*    }*/
 /*}*/
-
-
 
 /*.loading {*/
 /*	position: relative;*/
@@ -823,14 +853,13 @@ border-bottom-right-radius: 8px;
 /*	animation: loading 0.5s infinite;*/
 /*}*/
 
-
 /*  @-webkit-keyframes loading {*/
 /*	100% {*/
 /*	  -webkit-transform: translateX(100%);*/
 /*			  transform: translateX(100%);*/
 /*	}*/
 /*  }*/
-  
+
 /*  @keyframes loading {*/
 /*	100% {*/
 /*	  -webkit-transform: translateX(100%);*/
@@ -855,7 +884,7 @@ border-bottom-right-radius: 8px;
 /*			  transform: translateX(12%);*/
 /*	}*/
 /*  }*/
-  
+
 /*  @keyframes loading1 {*/
 /*	100% {*/
 /*	  -webkit-transform: translateX(12%);*/
@@ -872,11 +901,10 @@ border-bottom-right-radius: 8px;
 /*  .loading#totDeath, .loading#totRecovered { */
 /*	height: 90px;*/
 /*   }*/
-   
+
 /*.loading#totDeath { */
 /*	background: linear-gradient( 45deg, transparent 25%,  #1d1d1b 25%,	#1d1d1b 30%, #1d1d1b 35%, #1d1d1b 70%, transparent 70% );*/
 /*}*/
-
 
 /*.loading#totRecovered { */
 /*	background: linear-gradient( 45deg, transparent 25%,  #eff7db 25%,	#eff7db 30%, #eff7db 35%, #eff7db 70%, transparent 70% );*/
@@ -888,590 +916,696 @@ border-bottom-right-radius: 8px;
 /*	height: 90px;*/
 /*}*/
 
+.leftaxis .tick text {
+  font-size: 8px;
+  font-weight: 100;
+}
+.bottomaxis .tick text {
+  font-size: 8px;
+}
 
-.leftaxis .tick text{
-	font-size:8px;
-	font-weight:  100;
-  }
- .bottomaxis .tick text{
-	font-size:8px;
-  }
-
-  .yaxiscaption {
-	  font-weight: 500;
-  }
+.yaxiscaption {
+  font-weight: 500;
+}
 .indiamap small {
-    position: absolute;
-    bottom: -8px;
-    font-family: 'Rubik', sans-serif;
-    font-size: 12px;
-    line-height: 14px;
-    font-weight: 400;
-    margin: 16px 0;
+  position: absolute;
+  bottom: -8px;
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  margin: 16px 0;
 }
 svg.india.map {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 .indiaData .otherdata {
-    display: grid;
-    /* grid-template-columns: 50% 50%; */
-    grid-template-columns: 33% 33% 30%;
+  display: grid;
+  /* grid-template-columns: 50% 50%; */
+  grid-template-columns: 33% 33% 30%;
 }
-.flexcontainer{
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-column-gap: 30px;
-    margin: 20px 0 25px 0;
+.flexcontainer {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-column-gap: 30px;
+  margin: 20px 0 25px 0;
 }
 
 .indian-map-section {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .indian-map-section p {
-    margin: 0 !important;
+  margin: 0 !important;
 }
-.indiaData .otherdata h2{
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    margin: 0px 0 0 0;
-    line-height: 18px;
+.indiaData .otherdata h2 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0px 0 0 0;
+  line-height: 18px;
 }
 .indiaData .otherdata h1 {
-    font-family: 'Rubik', sans-serif;
-    font-size: 35px;
-    line-height: 45px;
-    font-weight: 400;
-    margin: 0 auto;
+  font-family: "Rubik", sans-serif;
+  font-size: 28px;
+  line-height: 45px;
+  font-weight: 400;
+  margin: 0 auto;
 }
 #myacctable {
-    position: relative;
- }
- #myacctable table {
-     font-family: 'Rubik', sans-serif;
-     border-collapse: collapse;
-     width: 100%;
- }
- #myacctable table tr{
-     width: 100%;
-     position: relative;
- }
- #myacctable table td, #myacctable table th {
-
-    padding: 8px;
-    
+  position: relative;
+}
+#myacctable table {
+  font-family: "Rubik", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#myacctable table tr {
+  width: 100%;
+  position: relative;
+}
+#myacctable table td,
+#myacctable table th {
+  padding: 8px;
 }
 
 #myacctable table th {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
-#myacctable table th { width: 50%; }
+#myacctable table th {
+  width: 50%;
+}
 
-#myacctable table tr.districtRow{color: #666666;}
-#myacctable table tr.districtRow td:first-child { padding-left: 33px;}
-#myacctable table tr td span{ color: red; font-size: 13px; }
+#myacctable table tr.districtRow {
+  color: #666666;
+}
+#myacctable table tr.districtRow td:first-child {
+  padding-left: 33px;
+}
+#myacctable table tr td span {
+  color: red;
+  font-size: 13px;
+}
 
-#myacctable table tr.stateRow {background-color: #FFFFFF;border-bottom: 1px solid #d6d6d6;transition: all .5s;}
-#myacctable table tr.stateRow.active {background-color: #d6d6d6; font-weight: 500;}
-#myacctable table tr.stateRow:hover {background-color: #ccc;}
+#myacctable table tr.stateRow {
+  background-color: #ffffff;
+  border-bottom: 1px solid #d6d6d6;
+  transition: all 0.5s;
+}
+#myacctable table tr.stateRow.active {
+  background-color: #d6d6d6;
+  font-weight: 500;
+}
+#myacctable table tr.stateRow:hover {
+  background-color: #ccc;
+}
 
 #myacctable table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: rgb(92, 92, 92);
-    color: white;
-    font-weight: normal;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(92, 92, 92);
+  color: white;
+  font-weight: normal;
 }
 #myacctable table .stateRow {
-    background-color: #f8f8f8;
+  background-color: #f8f8f8;
 }
 #myacctable table .stateRow td {
-    color: #000000;
+  color: #000000;
 }
 #myacctable table .stateRow td:first-child {
-   padding-left: 25px;
+  padding-left: 25px;
 }
 .stateRow:after {
-    content: '\02795';
-    font-size: 13px;
-    color: transparent;
-    text-shadow: 0 0 0 red;
-    margin-left: -4px;
-    margin-top: 6px;
-    left: 8px;
-    position: absolute;
+  content: "\02795";
+  font-size: 13px;
+  color: transparent;
+  text-shadow: 0 0 0 red;
+  margin-left: -4px;
+  margin-top: 6px;
+  left: 8px;
+  position: absolute;
 }
 
 .stateRow.active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 .highcharts-figure button.active {
-    background-color: #d4d2d2 !important;
-    color: #F00 !important;
-    outline:0;
-  }
-  .highcharts-figure button {
-    /* background-color: #dddddd; */
-    color: #4c4c4c;
-    border: none;
-    padding: 5px 10px;
-    font-size: 12px;
-    font-family: 'Rubik', sans-serif;
-    border-radius: 5px;
-    text-transform: uppercase;
-    margin-left: 10px;
-  }
-  .highcharts-figure button:hover {
-    background: #000000;
-    color: #ffffff;
-  }
+  background-color: #d4d2d2 !important;
+  color: #f00 !important;
+  outline: 0;
+}
+.highcharts-figure button {
+  /* background-color: #dddddd; */
+  color: #4c4c4c;
+  border: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-family: "Rubik", sans-serif;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+.highcharts-figure button:hover {
+  background: #000000;
+  color: #ffffff;
+}
 .highcharts-button.highcharts-contextbutton {
-                display: none;
-            }
-            .highcharts-exporting-group .highcharts-button:nth-child(2) {
-                transform: translate(94% ,5px)!important;
-            }
-            .highcharts-exporting-group .highcharts-button:nth-child(3) {
-                transform: translate(85.7% ,5px)!important;
-            }
-            .highcharts-button-box {
-                height: 20px!important;
-               fill: #dddddd; 
-            }
-            .highcharts-button text {
-                color: #4c4c4c!important;
-                fill: #4c4c4c!important;
-            }
-            .highcharts-button.highcharts-button-hover text {
-                color: #ffffff!important;
-                fill: #ffffff!important;
-            }
-            .highcharts-button.highcharts-button-hover .highcharts-button-box {
-               fill: rgb(164, 1, 1);
-            }
-            .highcharts-button text {
-                transform: translateY(-2px);
-            }
+  display: none;
+}
+.highcharts-exporting-group .highcharts-button:nth-child(2) {
+  transform: translate(94%, 5px) !important;
+}
+.highcharts-exporting-group .highcharts-button:nth-child(3) {
+  transform: translate(85.7%, 5px) !important;
+}
+.highcharts-button-box {
+  height: 20px !important;
+  fill: #dddddd;
+}
+.highcharts-button text {
+  color: #4c4c4c !important;
+  fill: #4c4c4c !important;
+}
+.highcharts-button.highcharts-button-hover text {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+.highcharts-button.highcharts-button-hover .highcharts-button-box {
+  fill: rgb(164, 1, 1);
+}
+.highcharts-button text {
+  transform: translateY(-2px);
+}
 .highcharts-credits {
-    display: none;
+  display: none;
 }
 
-
-.highcharts-figure, .highcharts-data-table table {
-min-width: 360px;
-max-width: 1020px;
-margin: 1em auto;
+.highcharts-figure,
+.highcharts-data-table table {
+  min-width: 360px;
+  max-width: 1020px;
+  margin: 1em auto;
 }
 
-.highcharts-figure{
-margin-left: -10px;
-margin-bottom: 20px;
+.highcharts-figure {
+  margin-left: -10px;
+  margin-bottom: 20px;
 }
-.highcharts-figure:first-child{
-margin-top: 30px;
+.highcharts-figure:first-child {
+  margin-top: 30px;
 }
 
 .highcharts-data-table table {
-    font-family: Verdana, sans-serif;
-    border-collapse: collapse;
-    border: 1px solid red;
-    margin: 10px auto;
-    text-align: center;
-    width: 100%;
-    max-width: 500px;
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid red;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
 }
 .highcharts-data-table caption {
-padding: 1em 0;
-font-size: 1.2em;
-color: #555;
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
 }
 .highcharts-data-table th {
-    font-weight: 600;
-padding: 0.5em;
+  font-weight: 600;
+  padding: 0.5em;
 }
-.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
-padding: 0.5em;
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+  padding: 0.5em;
 }
-.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
-background: #f8f8f8;
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+  background: #f8f8f8;
 }
 .highcharts-data-table tr:hover {
-background: #f1f7ff;
+  background: #f1f7ff;
 }
-#totalDeath-container .highcharts-graph, #totalDeath-container .highcharts-label-box.highcharts-tooltip-box, #dailydeceased-container .highcharts-graph, #dailydeceased-container .highcharts-label-box.highcharts-tooltip-box {
-stroke: #f00;
+#totalDeath-container .highcharts-graph,
+#totalDeath-container .highcharts-label-box.highcharts-tooltip-box,
+#dailydeceased-container .highcharts-graph,
+#dailydeceased-container .highcharts-label-box.highcharts-tooltip-box {
+  stroke: #f00;
 }
-#totalDeath-container .highcharts-point, #totalDeath-container .highcharts-halo.highcharts-color-0,
-#totalDeath-container .highcharts-markers.highcharts-series-0.highcharts-line-series.highcharts-color-0.highcharts-tracker.highcharts-series-hover path, #dailydeceased-container .highcharts-point, #dailydeceased-container .highcharts-halo.highcharts-color-0,
-#dailydeceased-container .highcharts-markers.highcharts-series-0.highcharts-line-series.highcharts-color-0.highcharts-tracker.highcharts-series-hover path {
-fill: #f00;
+#totalDeath-container .highcharts-point,
+#totalDeath-container .highcharts-halo.highcharts-color-0,
+#totalDeath-container
+  .highcharts-markers.highcharts-series-0.highcharts-line-series.highcharts-color-0.highcharts-tracker.highcharts-series-hover
+  path,
+#dailydeceased-container .highcharts-point,
+#dailydeceased-container .highcharts-halo.highcharts-color-0,
+#dailydeceased-container
+  .highcharts-markers.highcharts-series-0.highcharts-line-series.highcharts-color-0.highcharts-tracker.highcharts-series-hover
+  path {
+  fill: #f00;
 }
-#totalDeath-container .highcharts-label.highcharts-tooltip.highcharts-color-0  text tspan:nth-child(2), #dailydeceased-container .highcharts-label.highcharts-tooltip.highcharts-color-0  text tspan:nth-child(2) {
-fill: #f00!important;
+#totalDeath-container
+  .highcharts-label.highcharts-tooltip.highcharts-color-0
+  text
+  tspan:nth-child(2),
+#dailydeceased-container
+  .highcharts-label.highcharts-tooltip.highcharts-color-0
+  text
+  tspan:nth-child(2) {
+  fill: #f00 !important;
 }
-#dailydeath-container .highcharts-graph, #dailydeath-container .highcharts-label-box.highcharts-tooltip-box {
-stroke: #f00;
+#dailydeath-container .highcharts-graph,
+#dailydeath-container .highcharts-label-box.highcharts-tooltip-box {
+  stroke: #f00;
 }
-#dailydeath-container .highcharts-point, #dailydeath-container .highcharts-halo.highcharts-color-0,
-#dailydeath-container .highcharts-markers.highcharts-series-0.highcharts-line-series.highcharts-color-0.highcharts-tracker.highcharts-series-hover path {
-fill: #f00;
+#dailydeath-container .highcharts-point,
+#dailydeath-container .highcharts-halo.highcharts-color-0,
+#dailydeath-container
+  .highcharts-markers.highcharts-series-0.highcharts-line-series.highcharts-color-0.highcharts-tracker.highcharts-series-hover
+  path {
+  fill: #f00;
 }
-#dailydeath-container .highcharts-label.highcharts-tooltip.highcharts-color-0  text tspan:nth-child(2) {
-fill: #f00!important;
+#dailydeath-container
+  .highcharts-label.highcharts-tooltip.highcharts-color-0
+  text
+  tspan:nth-child(2) {
+  fill: #f00 !important;
 }
 
-
-#dailyconfirmed-container .highcharts-graph, #dailyconfirmed-container .highcharts-label-box.highcharts-tooltip-box {
-stroke: #035add;
+#dailyconfirmed-container .highcharts-graph,
+#dailyconfirmed-container .highcharts-label-box.highcharts-tooltip-box {
+  stroke: #035add;
 }
-#dailyconfirmed-container .highcharts-point, #dailyconfirmed-container .highcharts-halo.highcharts-color-0,
-#dailyconfirmed-container .highcharts-markers.highcharts-series-0.highcharts-line-series.highcharts-color-0.highcharts-tracker.highcharts-series-hover path {
-fill: #035add;
+#dailyconfirmed-container .highcharts-point,
+#dailyconfirmed-container .highcharts-halo.highcharts-color-0,
+#dailyconfirmed-container
+  .highcharts-markers.highcharts-series-0.highcharts-line-series.highcharts-color-0.highcharts-tracker.highcharts-series-hover
+  path {
+  fill: #035add;
 }
-#dailyconfirmed-container .highcharts-label.highcharts-tooltip.highcharts-color-0  text tspan:nth-child(2) {
-fill: #035add!important;
+#dailyconfirmed-container
+  .highcharts-label.highcharts-tooltip.highcharts-color-0
+  text
+  tspan:nth-child(2) {
+  fill: #035add !important;
 }
 
 .map-wrapper1 {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 767px) {
-    .anchor-nav {
-        text-align: center;
-        margin: 24px auto;
-    }
-        .barchart .right-chart {
-            padding-left: 0px;}
-        .earth-overlay {
-            margin-top: -276px;
-            margin-left: -95px;
-        }
-        .chartcontent{
-            grid-template-columns:100%;
-         
-            line-height:18px;
-        }
-    .chartcontent p{
-        margin: 14px 0 !important;
-    }
-    
-    .chartcontent .chartnav {
-        text-align: left;
-    }
-        .chartcontent .chartnav button{ margin-top: -2px;}
-        .leftaxis .tick text, .bottomaxis .tick text{
-            font-size:17px !important;
-        }
-    
-        .bottomaxis .tick:nth-child(even){
-            display: none;
-        }
-        
-          .yaxiscaption {
-              font-weight: 500;
-              font-size:16px;
-          }
-        .countrywiseData.indiaData {
-            display: grid;
-            grid-template-columns: 100%;
-            margin: 10px 0 0 0;
-        }
-        .anchor-nav ul {
-            /*column-count: 3;*/
-            padding: 0 10px;
-        }
-        .anchor-nav ul li {
-            display: inline-flex;
-            height: 25px;
-            width: 100px;
-            margin: 5px;
-            line-height:20px;
-        }
-        .anchor-nav ul li a {
-            width: 100%;
-            padding: 2px 10px;
-            font-size:10px !important;
-        }
-        /* .countrywiseData.indiaData .otherdata {
+  .anchor-nav {
+    text-align: center;
+    margin: 24px auto;
+  }
+  .barchart .right-chart {
+    padding-left: 0px;
+  }
+  .earth-overlay {
+    margin-top: -276px;
+    margin-left: -95px;
+  }
+  .chartcontent {
+    grid-template-columns: 100%;
+
+    line-height: 18px;
+  }
+  .chartcontent p {
+    margin: 14px 0 !important;
+  }
+
+  .chartcontent .chartnav {
+    text-align: left;
+  }
+  .chartcontent .chartnav button {
+    margin-top: -2px;
+  }
+  .leftaxis .tick text,
+  .bottomaxis .tick text {
+    font-size: 17px !important;
+  }
+
+  .bottomaxis .tick:nth-child(even) {
+    display: none;
+  }
+
+  .yaxiscaption {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .countrywiseData.indiaData {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 10px 0 0 0;
+  }
+  .anchor-nav ul {
+    /*column-count: 3;*/
+    padding: 0 10px;
+  }
+  .anchor-nav ul li {
+    display: inline-flex;
+    height: 25px;
+    width: 100px;
+    margin: 5px;
+    line-height: 20px;
+  }
+  .anchor-nav ul li a {
+    width: 100%;
+    padding: 2px 10px;
+    font-size: 10px !important;
+  }
+  /* .countrywiseData.indiaData .otherdata {
             display: grid;
             grid-template-columns: 50% 50%;
             grid-template-columns: 33% 33% 30%;
         } */
-    
-        .countrywiseData.indiaData div{
-            margin: 8px 0 !important;
-        }
-    
-        .dropdown, .dropdownstate,.btn-mobileSelect-gen{
-            display: block;
-        }
-        .worldmap,.indiamap {
-            width: 100%;
-        }
-        .countrywiseData {
-            width: 100%;
-        }
-        .covidDash-wrapper .dashboard-header figure {
-            width: 100px;
-        }
-        .covidDash-wrapper .dashboard-title {
-            font-size: 25px;
-            line-height: 27px;
-        }
-        .covidDash-wrapper .total-affected {
-            margin: 25px 0;
-        }
-        .covidDash-wrapper .total-affected h1#totAffected {
-            font-size: 60px;
-            line-height: 80px;
-        }
-        .covidDash-wrapper .total-affected p {
-            font-size: 14px;
-            line-height: 16px;
-        }
-        .deaths-recoverData {
-            flex-direction: column;
-            margin: 0;
-        }
-        .deathdata, .recoverdata {
-            padding: 10px;
-            margin: 10px 0;
-        }
-        .deathdata {
-            padding: 10px 27px;
-        }
-        .deathdata figure, .recoverdata figure {
-            width: 45px;
-        }
-        .deathdata h2, .recoverdata h2 {
-            font-size: 25px;
-            line-height: 27px;
-        }
-        .deathdata h1, .recoverdata h1 {
-            font-size: 45px;
-            line-height: 60px;
-        }
-        .barchart {
-            flex-direction: column;
-            margin: 25px 0;
-        }
-        .barchart .totalData div {
-            margin: 10px 5px 0 0;
-        }
-        .barchart .totalData div.criticalCondition, .barchart .totalData div.mildCondition {
-            margin: 10px 5px 0 10px;
-        }
-        .barchart .totalData h1, .barchart .right-chart p {
-            font-size: 20px;
-            line-height: 28px;
-        }
-        .barchart .totalData h2, .barchart .right-chart h1 {
-            font-size: 16px;
-            line-height: 18px;
-        }
-        .horstackchart {
-            margin: 0px 0;
-        }
-        .left-chart .horstackchart .bar100 {
-            height: 55px;
-        }
-        .left-chart .horstackchart div{
-            line-height: 55px;
-        }
-        .world-impact h1 {
-            font-size: 28px;
-            line-height: 30px;
-        } 
-        .world-impact p,.countrywiseData h2 {
-            font-size: 15px;
-            line-height: 18px;
-        }
-        .countrywiseData .country h1 {
-            font-size: 28px;
-            line-height: 45px;
-        }
-        .countrywiseData h1 {
-            font-size: 30px;
-            line-height: 45px;
-        }
-        .dangerData {
-            flex-direction: column;
-            margin: 30px 0;
-        }
-        .left-chart .horstackchart div, .right-chart .horstackchart div {
-            font-size: 22px;
-        }
-        .barchart .right-chart {
-            margin: 16px 0 0 0;
-        }
-        .map-wrapper {
-            flex-direction: column;
-        }
-        .countrywiseData {
-            flex-direction: row;
-            justify-content: space-between;
-            width:auto;
-        }
-        .deathCounts {
-            margin-left: 15px;
-        }
-        .totalandNew {
-            padding: 10px;
-        }
-        .dangerData figure {
-            width: 80px;
-        }
-        .dangerData .deathCounts figure {
-            width: 40px;
-        }
-        .countValue {
-            padding: 5px 10px;
-        }
-        .topCounts h2, .downCounts h2, .criticalData h2 {
-            font-size: 14px;
-            line-height: 16px;
-        }
-        .topCounts h1, .downCounts h1, .criticalData h1 {
-            font-size: 30px;
-            line-height: 40px;
-            text-align:center;
-        }
-        .criticalCounts, .recoverCounts {
-            padding: 10px 52px;
-        }
-        .criticalData {
-            margin-top: 15px;
-        }
-        .dailyDeaths h1, .totalDeaths h1, .indiadata-charts h1 {
-            font-size: 30px;
-            line-height: 32px;
-        }
-        .dailyDeaths p, .totalDeaths p {
-            font-size: 15px;
-            line-height: 18px;
-        }
-        .dailyDeaths, .totalDeaths, .indiadata-charts {
-            margin: 35px 0;
-        }
-        /*.loading#totAffected { */
-        /*	height: 80px !important;*/
-        /*}*/
-        /*.loading#totDeath, .loading#totRecovered { */
-        /*	height: 60px !important;*/
-        /*}*/
-        #myacctable { margin-bottom: 30px; }
 
-        .indiaData .otherdata h1 { font-size: 22px; line-height: 35px; }
+  .countrywiseData.indiaData div {
+    margin: 8px 0 !important;
+  }
 
-        .indiaData .otherdata { grid-template-columns: 33% 33% 33.9%; }
-
-        .stateDeaths { grid-template-columns: 45% 55%; padding: 18px 10px 10px 10px; }
-
-        .stateDeaths img { width: 78%;}
-
-        .country{ margin-bottom: 15px;}
-
-        .flexcontainer {
-            grid-template-columns: 100%;display: flex;flex-direction: column-reverse;
-        }
-	
-	 .highcharts-exporting-group .highcharts-button:nth-child(2) {
-                transform: translate(280px ,5px)!important;
-            }
-           .highcharts-exporting-group .highcharts-button:nth-child(3) {
-                transform: translate(197px ,5px)!important;
-            }
-            .allIndia {
-                display: none;
-            }
-       #selectData{
-            margin: 10px 0 20px 0 !important;
-            /*width: 100%;*/
-            /*opacity: 0;*/
-            /*position: absolute;*/
-            /*top: 41%;*/
-            /*z-index: 99999;*/
-            /*display: none !important;*/
-        }
-        
-    }
-    
-.allIndia {
-    /*display: block;*/
-    background: #000000;
-    color: #fff;
-    position: absolute;
-    right: 30%;
-    top: 10%;
-    padding: 5px 15px;
-    border: none;
-    outline: none;
-    font-family: 'Rubik', sans-serif;
+  .dropdown,
+  .dropdownstate,
+  .btn-mobileSelect-gen {
+    display: block;
+  }
+  .worldmap,
+  .indiamap {
+    width: 100%;
+  }
+  .countrywiseData {
+    width: 100%;
+  }
+  .covidDash-wrapper .dashboard-header figure {
+    width: 100px;
+  }
+  .covidDash-wrapper .dashboard-title {
+    font-size: 25px;
+    line-height: 27px;
+  }
+  .covidDash-wrapper .total-affected {
+    margin: 25px 0;
+  }
+  .covidDash-wrapper .total-affected h1#totAffected {
+    font-size: 60px;
+    line-height: 80px;
+  }
+  .covidDash-wrapper .total-affected p {
     font-size: 14px;
-    cursor: pointer;
+    line-height: 16px;
+  }
+  .deaths-recoverData {
+    flex-direction: column;
+    margin: 0;
+  }
+  .deathdata,
+  .recoverdata {
+    padding: 10px;
+    margin: 10px 0;
+  }
+  .deathdata {
+    padding: 10px 27px;
+  }
+  .deathdata figure,
+  .recoverdata figure {
+    width: 45px;
+  }
+  .deathdata h2,
+  .recoverdata h2 {
+    font-size: 25px;
+    line-height: 27px;
+  }
+  .deathdata h1,
+  .recoverdata h1 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+  .barchart {
+    flex-direction: column;
+    margin: 25px 0;
+  }
+  .barchart .totalData div {
+    margin: 10px 5px 0 0;
+  }
+  .barchart .totalData div.criticalCondition,
+  .barchart .totalData div.mildCondition {
+    margin: 10px 5px 0 10px;
+  }
+  .barchart .totalData h1,
+  .barchart .right-chart p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .barchart .totalData h2,
+  .barchart .right-chart h1 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .horstackchart {
+    margin: 0px 0;
+  }
+  .left-chart .horstackchart .bar100 {
+    height: 55px;
+  }
+  .left-chart .horstackchart div {
+    line-height: 55px;
+  }
+  .world-impact h1 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .world-impact p,
+  .countrywiseData h2 {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .countrywiseData .country h1 {
+    font-size: 28px;
+    line-height: 45px;
+  }
+  .countrywiseData h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .dangerData {
+    flex-direction: column;
+    margin: 30px 0;
+  }
+  .left-chart .horstackchart div,
+  .right-chart .horstackchart div {
+    font-size: 22px;
+  }
+  .barchart .right-chart {
+    margin: 16px 0 0 0;
+  }
+  .map-wrapper {
+    flex-direction: column;
+  }
+  .countrywiseData {
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+  }
+  .deathCounts {
+    margin-left: 15px;
+  }
+  .totalandNew {
+    padding: 10px;
+  }
+  .dangerData figure {
+    width: 80px;
+  }
+  .dangerData .deathCounts figure {
+    width: 40px;
+  }
+  .countValue {
+    padding: 5px 10px;
+  }
+  .topCounts h2,
+  .downCounts h2,
+  .criticalData h2 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .topCounts h1,
+  .downCounts h1,
+  .criticalData h1 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .criticalCounts,
+  .recoverCounts {
+    padding: 10px 52px;
+  }
+  .criticalData {
+    margin-top: 15px;
+  }
+  .dailyDeaths h1,
+  .totalDeaths h1,
+  .indiadata-charts h1 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .dailyDeaths p,
+  .totalDeaths p {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .dailyDeaths,
+  .totalDeaths,
+  .indiadata-charts {
+    margin: 35px 0;
+  }
+  /*.loading#totAffected { */
+  /*	height: 80px !important;*/
+  /*}*/
+  /*.loading#totDeath, .loading#totRecovered { */
+  /*	height: 60px !important;*/
+  /*}*/
+  #myacctable {
+    margin-bottom: 30px;
+  }
+
+  .indiaData .otherdata h1 {
+    font-size: 22px;
+    line-height: 35px;
+  }
+
+  .indiaData .otherdata {
+    grid-template-columns: 33% 33% 33.9%;
+  }
+
+  .stateDeaths {
+    grid-template-columns: 45% 55%;
+    padding: 18px 10px 10px 10px;
+  }
+
+  .stateDeaths img {
+    width: 78%;
+  }
+
+  .country {
+    margin-bottom: 15px;
+  }
+
+  .flexcontainer {
+    grid-template-columns: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .highcharts-exporting-group .highcharts-button:nth-child(2) {
+    transform: translate(280px, 5px) !important;
+  }
+  .highcharts-exporting-group .highcharts-button:nth-child(3) {
+    transform: translate(197px, 5px) !important;
+  }
+  .allIndia {
+    display: none;
+  }
+  #selectData {
+    margin: 10px 0 20px 0 !important;
+    /*width: 100%;*/
+    /*opacity: 0;*/
+    /*position: absolute;*/
+    /*top: 41%;*/
+    /*z-index: 99999;*/
+    /*display: none !important;*/
+  }
 }
-.states-btn button, #india-tot button {
-        /* background-color: #dddddd; */
-        color: #4c4c4c;
-        border: none;
-        padding: 5px 10px;
-        font-size: 12px;
-        font-family: 'Rubik', sans-serif;
-        border-radius: 5px;
-        text-transform: uppercase;
-        margin-left: 10px;
-    }
-    .states-btn button.active, #india-tot button.active {
-        background-color: #d4d2d2 !important;
-        color: #F00 !important;
-        outline: 0;
-    }
-    .states-btn #selectData {
-        /*display: inline-block !important;*/
-        background-color: #d4d2d2;
-        color: #000;
-        border: none;
-        outline: none;
-        padding: 5px 10px;
-        font-size: 12px;
-        font-family: 'Rubik', sans-serif;
-        text-transform: uppercase;
-        margin-left: 10px;
-    }
-    #container2 .highcharts-button.highcharts-contextbutton {
-        display: none;
-    }
-    #container2 .highcharts-button-box {
-        height: 20px!important;
-        fill: #dddddd; 
-    }
-    #container2 .highcharts-button text {
-        color: #4c4c4c!important;
-        fill: #4c4c4c!important;
-    }
-    #container2 .highcharts-button.highcharts-button-hover text {
-        color: #ffffff!important;
-        fill: #ffffff!important;
-    }
-    #container2 .highcharts-button.highcharts-button-hover .highcharts-button-box {
-        fill: rgb(164, 1, 1);
-    }
-    #container2 .highcharts-button text {
-        transform: translateY(-2px);
-    }
-    .states-btn, #india-tot {
-        margin: 20px 0;
-        position: relative;
-    }
-    .states-btn button:nth-child(1) {
-        margin-left: 0;
-    }
-    .states-btn button {
-        background-color: #d4d2d2;
-        margin-left: 0;
-        margin-top: 10px;
-    }
+
+.allIndia {
+  /*display: block;*/
+  background: #000000;
+  color: #fff;
+  position: absolute;
+  right: 30%;
+  top: 10%;
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+.states-btn button,
+#india-tot button {
+  /* background-color: #dddddd; */
+  color: #4c4c4c;
+  border: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-family: "Rubik", sans-serif;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+.states-btn button.active,
+#india-tot button.active {
+  background-color: #d4d2d2 !important;
+  color: #f00 !important;
+  outline: 0;
+}
+.states-btn #selectData {
+  /*display: inline-block !important;*/
+  background-color: #d4d2d2;
+  color: #000;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+#container2 .highcharts-button.highcharts-contextbutton {
+  display: none;
+}
+#container2 .highcharts-button-box {
+  height: 20px !important;
+  fill: #dddddd;
+}
+#container2 .highcharts-button text {
+  color: #4c4c4c !important;
+  fill: #4c4c4c !important;
+}
+#container2 .highcharts-button.highcharts-button-hover text {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+#container2 .highcharts-button.highcharts-button-hover .highcharts-button-box {
+  fill: rgb(164, 1, 1);
+}
+#container2 .highcharts-button text {
+  transform: translateY(-2px);
+}
+.states-btn,
+#india-tot {
+  margin: 20px 0;
+  position: relative;
+}
+.states-btn button:nth-child(1) {
+  margin-left: 0;
+}
+.states-btn button {
+  background-color: #d4d2d2;
+  margin-left: 0;
+  margin-top: 10px;
+}
+
+.filterthemap-list button {
+  background-color: #000;
+  color: #fff;
+}
+.filterthemap-list button.active {
+  background-color: rgb(112, 6, 6);
+  color: #fff;
+}
+.filterthemap-list button:hover {
+  background-color: rgb(112, 6, 6);
+  color: #fff;
+}
